@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin-top: 1rem;
+  margin: 0rem 1.5rem;
+}
+input{
+  border: none;
+  
+  margin: auto;
+  background-color: antiquewhite;
+
+  font-size: 1.1rem;
+  color: gray;
+  outline: none;
+  padding: .3rem .3rem;
+  width: 90%;
+  position: relative;
+  height: 2rem;
+background: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sug-section{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+margin: .3rem;
+padding: .3rem;
+cursor: pointer;
+
+}
+.main{
+  margin-top: .5rem;
+  max-width: 24rem;
+max-height: 300px;
+overflow-y: scroll;
+background-color: rgb(219, 219, 219);
+align-items: flex-start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sug-img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.sug-names{
+display: flex;
+align-items: center;
+min-height: 1.5rem;
+justify-content: center};
+
+
+.forname{      
+
+display: flex;
+align-items: center;
+min-height: 3rem;
+justify-content: center};
+
+
+.sug-names > div {
+  font-size: .9rem;
+  font-weight: 400;
+  
+ 
+  color: darkgray;
+  position: absolute;
+}
+
+.selected-person{
+background-color: black;
+color: aliceblue;
+border-radius: 8px;
+font-size: .7rem;
+padding: .3rem;
+}
+.input-dev{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  border: 1px solid black;
+
+ 
+}
+.selected-single{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 5px;
+ 
+  z-index: 66;
+ 
+
+}
+.input-portion{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start
 }
 
-.App-link {
-  color: #61dafb;
+.close{
+   padding: .2rem;
+   border: 1px solid white;
+   font-weight: bolder;
+   border-radius: 50%;
+margin-left: .2rem;
+cursor: pointer;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
